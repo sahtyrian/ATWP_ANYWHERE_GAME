@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATWP Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <a href="#" id="start-button">
+            <img src="startscreen.png" alt="Start Screen Image" style="width: 800px; height: 400px;">
+        </a>
+    </div>     
+    <audio controls autoplay>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="background-wrapper">
+        <div id="background"></div>
+        <div id="background2"></div>
+    </div>
+    <div id="game-container">
+        <img id="car" src="car_image.png">
+    </div>
+    <div id="score-counter">Score:  </div> <!-- Add the score counter element here -->
+     
+    <!-- Directional pad overlay -->
+    <div id="left-pad">
+        <button id="left-button" data-direction="left" onmousedown="handleButtonDown('left')" onmouseup="handleButtonUp('left')" ontouchstart="handleButtonDown('left')" ontouchend="handleButtonUp('left')">&#8592;</button>
+        <button id="up-button" data-direction="up" onmousedown="handleButtonDown('up')" onmouseup="handleButtonUp('up')" ontouchstart="handleButtonDown('up')" ontouchend="handleButtonUp('up')">&#8593;</button>
+    </div>
+    
+    <div id="right-pad">
+        <button id="down-button" data-direction="down" onmousedown="handleButtonDown('down')" onmouseup="handleButtonUp('down')" ontouchstart="handleButtonDown('down')" ontouchend="handleButtonDown('down')">&#8595;</button>
+        <button id="right-button" data-direction="right" onmousedown="handleButtonDown('right')" onmouseup="handleButtonUp('right')" ontouchstart="handleButtonDown('right')" ontouchend="handleButtonUp('right')">&#8594;</button>
+    </div>    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
